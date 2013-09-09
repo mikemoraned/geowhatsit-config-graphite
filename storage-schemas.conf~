@@ -1,0 +1,18 @@
+[stats]
+priority = 100
+pattern = ^stats\..*
+retentions = 10:2160,60:10080,600:262974
+
+[stats_counts]
+priority = 100
+pattern = ^stats_counts\..*
+retentions = 10:2160,60:10080,600:262974
+
+[statsd]
+priority = 100
+pattern = ^statsd\..*
+retentions = 10:2160,60:10080,600:262974
+
+[default_1min_for_1day]
+pattern = .*
+retentions = 60s:1d
